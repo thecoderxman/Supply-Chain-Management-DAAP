@@ -8,7 +8,7 @@ import "../coffeeaccesscontrol/ConsumerRole.sol";
 contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, ConsumerRole {
 
   // Define 'owner'
-  address payable owner;
+  address payable Owner;
 
   // Define a variable called 'upc' for Universal Product Code (UPC)
   uint  upc;
@@ -69,7 +69,7 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, Cons
 
   // Define a modifer that checks to see if msg.sender == owner of the contract
   modifier onlyOwner() {
-    require(msg.sender == owner,"You are not an owner !!!!");
+    require(msg.sender == Owner,"You are not an owner !!!!");
     _;
   }
 
@@ -146,15 +146,15 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, Cons
   // and set 'sku' to 1
   // and set 'upc' to 1
   constructor() public payable {
-    owner = msg.sender;
+    Owner = msg.sender;
     sku = 1;
     upc = 1;
   }
 
   // Define a function 'kill' if required
   function kill() public {
-    if (msg.sender == owner) {
-        selfdestruct(owner);
+    if (msg.sender == Owner) {
+        selfdestruct(Owner);
     }
   }
 
@@ -314,14 +314,14 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, Cons
   ) 
   {
   // Assign values to the 8 parameters
-  uint    itemSKU = items[_upc].sku;
-  uint    itemUPC = items[_upc].upc;
-  address ownerID = items[upc].ownerID;
-  address originFarmerID = items[_upc].originFarmerID;
-  string memory originFarmName = items[_upc].originFarmName;
-  string memory originFarmInformation = items[_upc].originFarmInformation;
-  string memory originFarmLatitude = items[_upc].originFarmLatitude;
-  string memory originFarmLongitude = items[_upc].originFarmLongitude;
+  itemSKU = items[_upc].sku;
+  itemUPC = items[_upc].upc;
+  ownerID = items[upc].ownerID;
+  originFarmerID = items[_upc].originFarmerID;
+  originFarmName = items[_upc].originFarmName;
+  originFarmInformation = items[_upc].originFarmInformation;
+  originFarmLatitude = items[_upc].originFarmLatitude;
+  originFarmLongitude = items[_upc].originFarmLongitude;
   
     
   return 
@@ -352,15 +352,15 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, Cons
   ) 
   {
     // Assign values to the 9 parameters
-  uint    itemSKU = items[_upc].sku;
-  uint    itemUPC = items[_upc].upc;
-  uint    productID = items[_upc].productID;
-  string memory productNotes = items[_upc].productNotes;
-  uint    productPrice = items[_upc].productPrice;
-  uint   itemState = uint256(items[_upc].itemState);
-  address distributorID = items[_upc].distributorID;
-  address retailerID = items[_upc].retailerID;
-  address consumerID = items[_upc].consumerID;
+  itemSKU = items[_upc].sku;
+  itemUPC = items[_upc].upc;
+  productID = items[_upc].productID;
+  productNotes = items[_upc].productNotes;
+  productPrice = items[_upc].productPrice;
+  itemState = uint256(items[_upc].itemState);
+  distributorID = items[_upc].distributorID;
+  retailerID = items[_upc].retailerID;
+  consumerID = items[_upc].consumerID;
     
   return 
   (
