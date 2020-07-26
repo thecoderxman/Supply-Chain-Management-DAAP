@@ -6,8 +6,6 @@
 ## Project write-up - Libraries
 Roles 
 truffle-hd-wallet-provider
-The `Roles` library was used by different access control contracts for easy add and remove in the supply chain 
-`truffle-hd-wallet-provider` to sign transactions for addresses.
 
 ## IPFS
 Did not use IPFS
