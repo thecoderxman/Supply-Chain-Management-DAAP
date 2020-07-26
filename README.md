@@ -2,6 +2,19 @@
 
 ## Project write-up - UML
 
+### Activity
+![Activity](UML/Activity-Diagram.jpg)
+
+### Sequence
+![Sequence](UML/Sequence-Diagram.jpg)
+
+### State
+![State](UML/State-Diagram.jpg)
+
+### Classes (Data Model)
+![Data-Model](UML/Data-Model-Diagram.jpg)
+
+
 
 ## Project write-up - Libraries
 Roles 
