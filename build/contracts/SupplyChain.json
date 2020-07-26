@@ -22771,12 +22771,13 @@
         }
       },
       "links": {},
-      "address": "0x3ad8DdEAEbC182166Ab1ffA8af4352d60Fe7c59E",
-      "transactionHash": "0xd6a4627ab15f52130632b6fc108f3213549716f937d0d12cea22a979d604e491"
+      "address": "0xBfFE1ee714a443010BfDA32f90eAb8eF72c459b3",
+      "transactionHash": "0x7489c8bed50fe97bf2bac5744253d3864490e3850cd91802de5aac41c7282bd4"
     }
   },
-  "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-24T18:26:24.467Z",
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-07-25T10:33:28.184Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },

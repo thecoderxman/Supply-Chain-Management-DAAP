@@ -2565,12 +2565,13 @@
         }
       },
       "links": {},
-      "address": "0x13F632252f26E454FEdD1949a9394DF0b446daD1",
-      "transactionHash": "0xf2d3a1c258b50d069aceb4450c0be692a6fa17f3a5a8399cca5ed55b84f9dac4"
+      "address": "0x5a37d23d307DD8Bb2De2F9ac53ab1aFb0230A222",
+      "transactionHash": "0xf518349d0e7f829c1d45ad8e2adc83f94f932973fe957caf9a67b1f5f60c4eb0"
     }
   },
-  "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-24T18:26:24.451Z",
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-07-25T10:33:28.173Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },

@@ -225,6 +225,7 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, Cons
   verifyCaller(items[_upc].originFarmerID)
   {
     // Update the appropriate fields
+    items[_upc].productPrice = _price;
     items[_upc].itemState = State.ForSale;
     // Emit the appropriate event
     emit ForSale(_upc);
