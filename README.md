@@ -1,5 +1,8 @@
 # Supply-Chain-Management-DAAP
 
+**Description:**
+Test Description
+
 ## Project write-up - UML
 
 ### Activity
